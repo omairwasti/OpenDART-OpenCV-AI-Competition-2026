@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101112"><title>{% block title %}OpenDART{% endblock %}</title>
+<link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">{% block scripts %}{% endblock %}</head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<nav class="site-nav wrap" aria-label="Main navigation"><a class="wordmark" href="/">OpenDART<span aria-hidden="true">.</span></a><div><a href="/"{% if request.path=='/' %} aria-current="page"{% endif %}>Closed-loop simulation</a><a href="/draco"{% if request.path=='/draco' %} aria-current="page"{% endif %}>Real DRACO imagery</a></div></nav>
+{% block content %}{% endblock %}
+<footer class="wrap"><a class="wordmark" href="/">OpenDART<span aria-hidden="true">.</span></a><p>Omair Wasti &amp; Arslan Amjad<br>OpenCV AI Competition 2026 · Python / OpenCV 5 / AWS</p><p>A research demonstrator.<br>No claim of flight readiness.</p></footer></body></html>

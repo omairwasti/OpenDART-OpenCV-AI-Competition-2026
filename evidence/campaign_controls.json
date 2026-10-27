@@ -1,0 +1,82 @@
+[
+  {
+    "appearance": "ANALYTIC",
+    "zero_force_control_truth_paths_max_difference_SI": 0.0,
+    "rows_compared": 600,
+    "runs": [
+      {
+        "run_id": "analytic_nominal_s07",
+        "status": "TARGET_IMPACT",
+        "accepted_updates": 557,
+        "max_force_n": 2.944031092931181,
+        "delta_v_mps": 1.6037048712037818,
+        "final_position_error_m": 9.227727090140252,
+        "final_true_range_m": 87.02599821340937,
+        "nav_hold_s": 16.0,
+        "terminal_coast_s": 6.314507393042732
+      },
+      {
+        "run_id": "analytic_ballistic_s07",
+        "status": "MISS",
+        "accepted_updates": 571,
+        "max_force_n": 0.0,
+        "delta_v_mps": 0.0,
+        "final_position_error_m": 9.479047629951395,
+        "final_true_range_m": 615.5217793355972,
+        "nav_hold_s": 0.0,
+        "terminal_coast_s": 0.0
+      },
+      {
+        "run_id": "analytic_no_measurement_s07",
+        "status": "MISS",
+        "accepted_updates": 0,
+        "max_force_n": 0.0,
+        "delta_v_mps": 0.0,
+        "final_position_error_m": 446.4377045751009,
+        "final_true_range_m": 615.5217793355972,
+        "nav_hold_s": 567.0,
+        "terminal_coast_s": 12.0
+      }
+    ]
+  },
+  {
+    "appearance": "REFERENCE",
+    "zero_force_control_truth_paths_max_difference_SI": 0.0,
+    "rows_compared": 600,
+    "runs": [
+      {
+        "run_id": "reference_nominal_s07",
+        "status": "TARGET_IMPACT",
+        "accepted_updates": 557,
+        "max_force_n": 2.9163335986225176,
+        "delta_v_mps": 1.5259535760664507,
+        "final_position_error_m": 11.328805085078393,
+        "final_true_range_m": 87.02079729945177,
+        "nav_hold_s": 16.0,
+        "terminal_coast_s": 8.268447080416081
+      },
+      {
+        "run_id": "reference_ballistic_s07",
+        "status": "MISS",
+        "accepted_updates": 571,
+        "max_force_n": 0.0,
+        "delta_v_mps": 0.0,
+        "final_position_error_m": 10.50105714598771,
+        "final_true_range_m": 615.5217793355972,
+        "nav_hold_s": 0.0,
+        "terminal_coast_s": 0.0
+      },
+      {
+        "run_id": "reference_no_measurement_s07",
+        "status": "MISS",
+        "accepted_updates": 0,
+        "max_force_n": 0.0,
+        "delta_v_mps": 0.0,
+        "final_position_error_m": 446.4377045751009,
+        "final_true_range_m": 615.5217793355972,
+        "nav_hold_s": 567.0,
+        "terminal_coast_s": 12.0
+      }
+    ]
+  }
+]

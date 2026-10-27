@@ -1,0 +1,186 @@
+{
+  "f0000": {
+    "state": "SEARCH_UNRESOLVED",
+    "identity_status": "UNESTABLISHED",
+    "target_center_uv": null,
+    "visible_region_xywh": null,
+    "selection_available": false,
+    "resolved_body": false,
+    "region_component_count": 0,
+    "events": []
+  },
+  "f1291": {
+    "state": "SEARCH_UNRESOLVED",
+    "identity_status": "UNESTABLISHED",
+    "target_center_uv": null,
+    "visible_region_xywh": null,
+    "selection_available": false,
+    "resolved_body": false,
+    "region_component_count": 0,
+    "events": []
+  },
+  "f2419": {
+    "state": "TRACKING",
+    "identity_status": "SECONDARY_IMAGE_HYPOTHESIS_IDENTITY_UNVERIFIED",
+    "target_center_uv": [
+      480.16788843196855,
+      736.1469694260683
+    ],
+    "visible_region_xywh": [
+      477,
+      733,
+      8,
+      7
+    ],
+    "selection_available": true,
+    "resolved_body": false,
+    "region_component_count": 1,
+    "events": []
+  },
+  "f3226": {
+    "state": "TRACKING",
+    "identity_status": "SECONDARY_IMAGE_HYPOTHESIS_IDENTITY_UNVERIFIED",
+    "target_center_uv": [
+      510.77471129379524,
+      773.6692111959287
+    ],
+    "visible_region_xywh": [
+      507,
+      770,
+      8,
+      8
+    ],
+    "selection_available": true,
+    "resolved_body": false,
+    "region_component_count": 1,
+    "events": []
+  },
+  "f3764": {
+    "state": "TRACKING",
+    "identity_status": "SECONDARY_IMAGE_HYPOTHESIS_IDENTITY_UNVERIFIED",
+    "target_center_uv": [
+      662.3692336035372,
+      669.0155490051584
+    ],
+    "visible_region_xywh": [
+      652,
+      659,
+      19,
+      19
+    ],
+    "selection_available": true,
+    "resolved_body": false,
+    "region_component_count": 1,
+    "events": []
+  },
+  "f3825": {
+    "state": "TRACKING",
+    "identity_status": "SECONDARY_IMAGE_HYPOTHESIS_IDENTITY_UNVERIFIED",
+    "target_center_uv": [
+      493.75445231080425,
+      288.2284640077393
+    ],
+    "visible_region_xywh": [
+      482,
+      275,
+      23,
+      24
+    ],
+    "selection_available": true,
+    "resolved_body": false,
+    "region_component_count": 1,
+    "events": []
+  },
+  "f3946": {
+    "state": "RESOLVED_BODY",
+    "identity_status": "SECONDARY_IMAGE_HYPOTHESIS_IDENTITY_UNVERIFIED",
+    "target_center_uv": null,
+    "visible_region_xywh": [
+      437.0,
+      630.0,
+      79.0,
+      75.0
+    ],
+    "selection_available": true,
+    "resolved_body": true,
+    "region_component_count": 2,
+    "events": []
+  },
+  "f3973": {
+    "state": "RESOLVED_BODY",
+    "identity_status": "SECONDARY_IMAGE_HYPOTHESIS_IDENTITY_UNVERIFIED",
+    "target_center_uv": null,
+    "visible_region_xywh": [
+      323.0,
+      365.0,
+      159.0,
+      150.0
+    ],
+    "selection_available": true,
+    "resolved_body": true,
+    "region_component_count": 4,
+    "events": []
+  },
+  "f3991": {
+    "state": "RESOLVED_BODY",
+    "identity_status": "SECONDARY_IMAGE_HYPOTHESIS_IDENTITY_UNVERIFIED",
+    "target_center_uv": null,
+    "visible_region_xywh": [
+      195.0,
+      72.0,
+      459.0,
+      459.0
+    ],
+    "selection_available": true,
+    "resolved_body": true,
+    "region_component_count": 4,
+    "events": []
+  },
+  "f3994": {
+    "state": "RESOLVED_BODY",
+    "identity_status": "SECONDARY_IMAGE_HYPOTHESIS_IDENTITY_UNVERIFIED",
+    "target_center_uv": null,
+    "visible_region_xywh": [
+      243.0,
+      87.0,
+      514.0,
+      514.0
+    ],
+    "selection_available": true,
+    "resolved_body": true,
+    "region_component_count": 1,
+    "events": []
+  },
+  "f3998": {
+    "state": "RESOLVED_BODY",
+    "identity_status": "SECONDARY_IMAGE_HYPOTHESIS_IDENTITY_UNVERIFIED",
+    "target_center_uv": null,
+    "visible_region_xywh": [
+      335.0,
+      134.0,
+      514.0,
+      514.0
+    ],
+    "selection_available": true,
+    "resolved_body": true,
+    "region_component_count": 1,
+    "events": []
+  },
+  "f3999": {
+    "state": "PARTIAL_FRAME",
+    "identity_status": "SECONDARY_IMAGE_HYPOTHESIS_IDENTITY_UNVERIFIED",
+    "target_center_uv": null,
+    "visible_region_xywh": [
+      347.0,
+      607.0,
+      514.0,
+      53.0
+    ],
+    "selection_available": false,
+    "resolved_body": true,
+    "region_component_count": 1,
+    "events": [
+      "PARTIAL_FRAME"
+    ]
+  }
+}

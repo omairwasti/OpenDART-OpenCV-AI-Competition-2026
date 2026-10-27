@@ -1,0 +1,11 @@
+{
+  "name": "fast_pd_tuned",
+  "speed_mps": 6100.0,
+  "duration_s": 600.0,
+  "max_time_s": 650.0,
+  "transverse_position_m": [1000.0, -500.0],
+  "transverse_velocity_mps": [0.5, -0.2],
+  "guidance": "pd",
+  "pd_frequency_radps": 0.012,
+  "navigation": "truth"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "draco_patch_closed_loop_2d",
+  "period_s": 42900.0,
+  "spin_period_s": 8136.0,
+  "epoch_s": 42900.0,
+  "reference_image": "assets/dart_0401929788_46871_01_iof.png",
+  "use_apparent_size": true,
+  "require_opencv5": true,
+  "fps": 24.0,
+  "overview_frames": 192
+}

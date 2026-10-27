@@ -1,0 +1,11 @@
+{
+  "name": "slow_lab",
+  "speed_mps": 10.0,
+  "duration_s": 600.0,
+  "max_time_s": 750.0,
+  "transverse_position_m": [150.0, -80.0],
+  "transverse_velocity_mps": [0.05, -0.02],
+  "coast_tgo_s": 8.0,
+  "guidance": "zem",
+  "navigation": "truth"
+}

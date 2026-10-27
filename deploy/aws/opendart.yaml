@@ -1,0 +1,142 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: OpenDART single-instance OpenCV demonstration in the existing Sydney VPC
+Parameters:
+  VpcId:
+    Type: AWS::EC2::VPC::Id
+  SubnetId:
+    Type: AWS::EC2::Subnet::Id
+  AmiId:
+    Type: AWS::EC2::Image::Id
+  EnableCompute:
+    Type: String
+    Default: 'false'
+    AllowedValues: ['false', 'true']
+  ReleaseKey:
+    Type: String
+    Default: releases/not-yet-uploaded.tar.gz
+    AllowedPattern: 'releases/[a-zA-Z0-9._/-]+'
+  ReleaseSha256:
+    Type: String
+    Default: '0000000000000000000000000000000000000000000000000000000000000000'
+    AllowedPattern: '[a-f0-9]{64}'
+Conditions:
+  ComputeEnabled: !Equals [!Ref EnableCompute, 'true']
+Resources:
+  Artifacts:
+    Type: AWS::S3::Bucket
+    Properties:
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      OwnershipControls:
+        Rules:
+          - ObjectOwnership: BucketOwnerEnforced
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      Tags:
+        - Key: Project
+          Value: OpenDART
+  WebSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: OpenDART HTTP only; administration through SSM
+      VpcId: !Ref VpcId
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+      SecurityGroupEgress:
+        - IpProtocol: '-1'
+          CidrIp: 0.0.0.0/0
+      Tags:
+        - Key: Project
+          Value: OpenDART
+  InstanceRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ec2.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - !Sub arn:${AWS::Partition}:iam::aws:policy/AmazonSSMManagedInstanceCore
+      Policies:
+        - PolicyName: ReadOpenDARTRelease
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action: s3:GetObject
+                Resource:
+                  - !Sub '${Artifacts.Arn}/releases/*'
+                  - !Sub '${Artifacts.Arn}/evidence/*'
+  InstanceProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Roles: [!Ref InstanceRole]
+  Compute:
+    Type: AWS::EC2::Instance
+    Condition: ComputeEnabled
+    Properties:
+      ImageId: !Ref AmiId
+      InstanceType: c7i-flex.large
+      IamInstanceProfile: !Ref InstanceProfile
+      MetadataOptions:
+        HttpTokens: required
+        HttpPutResponseHopLimit: 1
+      NetworkInterfaces:
+        - DeviceIndex: '0'
+          AssociatePublicIpAddress: true
+          SubnetId: !Ref SubnetId
+          GroupSet: [!Ref WebSecurityGroup]
+      BlockDeviceMappings:
+        - DeviceName: /dev/sda1
+          Ebs:
+            VolumeSize: 20
+            VolumeType: gp3
+            Encrypted: true
+            DeleteOnTermination: true
+      Tags:
+        - Key: Name
+          Value: OpenDART
+        - Key: Project
+          Value: OpenDART
+      UserData:
+        Fn::Base64: !Sub |
+          #!/bin/bash
+          set -euo pipefail
+          export DEBIAN_FRONTEND=noninteractive
+          apt-get update -qq
+          apt-get install -y curl unzip ca-certificates
+          curl --fail --silent --show-error https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o /tmp/opendart-awscli.zip
+          mkdir -p /tmp/opendart-awscli
+          unzip -qo /tmp/opendart-awscli.zip -d /tmp/opendart-awscli
+          /tmp/opendart-awscli/aws/install --update
+          mkdir -p /opt/opendart/releases/${ReleaseSha256}
+          aws s3 cp s3://${Artifacts}/${ReleaseKey} /opt/opendart/release.tar.gz --region ap-southeast-2 --only-show-errors
+          echo '${ReleaseSha256}  /opt/opendart/release.tar.gz' | sha256sum -c -
+          tar -xzf /opt/opendart/release.tar.gz -C /opt/opendart/releases/${ReleaseSha256}
+          bash /opt/opendart/releases/${ReleaseSha256}/deploy/aws/bootstrap.sh /opt/opendart/releases/${ReleaseSha256} ${ReleaseSha256}
+Outputs:
+  BucketName:
+    Value: !Ref Artifacts
+  SecurityGroupId:
+    Value: !Ref WebSecurityGroup
+  RoleName:
+    Value: !Ref InstanceRole
+  ProfileName:
+    Value: !Ref InstanceProfile
+  InstanceId:
+    Condition: ComputeEnabled
+    Value: !Ref Compute
+  Endpoint:
+    Condition: ComputeEnabled
+    Value: !Sub 'http://${Compute.PublicDnsName}'

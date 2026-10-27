@@ -1,0 +1,15 @@
+{
+  "archive": "OpenDART_Portable_Reproduction.tar.gz",
+  "sha256": "1b5d49fa3b05978ef3d55ff3ca4d0f02197d864b5b27519cd8fb8b32590cd25a",
+  "key": "releases/1b5d49fa3b05978ef3d55ff3ca4d0f02197d864b5b27519cd8fb8b32590cd25a.tar.gz",
+  "source_sha256": "e7e4dbc0f876be060ae0683ca511228408982c27ffe47e3a5d47286ce1fe17fe",
+  "size_bytes": 6885538,
+  "files": 105,
+  "scientific_files_verified": 18,
+  "variant": "portable_reproduction",
+  "deployed": false,
+  "based_on_deployed_release_sha256": "44685f7cf710d79a857f68124c4b5dde5930a055486ab6a167052577d24888a2",
+  "path_only_source_changes": [
+    "opendart/replay.py"
+  ]
+}

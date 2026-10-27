@@ -1,0 +1,13 @@
+{
+  "frozen_at_utc": "2026-10-26T12:49:27.180673+00:00",
+  "source_hashes": {
+    "tools\\draco_development.py": "8b77ec383b58683c4b5d00a3538ceae7f1861d1380c83f1926006a6e55231296",
+    "tools\\draco_perception.py": "6afb56362fe841f2158c291600d63760929ea9948940d984dc05d9f58796aba9",
+    "tools\\draco_perception_config_v1.json": "84554612ed68c6b699ac2d4ccc013a38dcf317d38eb95b4d9740f3e2ea7558d5",
+    "opendart\\vision.py": "ea6459012530a9f55e6c51a485bbdc217ea9a206c16f5624cc646b096c035aad",
+    "tools\\replay_draco_frozen.py": "a512fec66f724d833a83030161b96eff0fd707fa808cad07fbbfa423720815e3"
+  },
+  "configuration_sha256": "77e67c0ed063ad0bd723ffb72ee1da3f88b7f72e12f1a4fcb0deadc86d5556d5",
+  "held_out_truth_consumed": false,
+  "required_stop": "Request separate human-reviewed held-out JSON; no evaluation until supplied"
+}

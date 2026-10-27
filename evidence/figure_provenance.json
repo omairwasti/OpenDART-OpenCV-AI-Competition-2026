@@ -1,0 +1,100 @@
+[
+  {
+    "file": "figures/synthetic_camera.png",
+    "source": "results/draco_web_task3a6_2026-10-26/cloud_synthetic/NOMINAL_camera_240.png",
+    "source_sha256": "e0db82e20d2c8e33bf8bdbf15ad197f8e87ce2ac522a3e6538a1e04033a33e01",
+    "byte_identical": true
+  },
+  {
+    "file": "figures/campaign_success.png",
+    "source": "results/visual_campaign_2026-10-25/aggregate/success_rates.png",
+    "source_sha256": "e5f65cf1b35dbea1b7c5014bc9253ece3b83d713dbcaf15c6bef7a62c87fa747",
+    "byte_identical": true
+  },
+  {
+    "file": "figures/campaign_blackout.png",
+    "source": "results/visual_campaign_2026-10-25/aggregate/loss_recovery.png",
+    "source_sha256": "f87e3a986f6f039796ca65af9755387bd964e921f548fcf76f35dd0c95189b5c",
+    "byte_identical": true
+  },
+  {
+    "file": "figures/campaign_uncertainty.png",
+    "source": "results/visual_campaign_2026-10-25/aggregate/uncertainty_diagnostics.png",
+    "source_sha256": "1ce680daeeb8357af0b3b5bd244304f43c440cae3994ceb01893cd434770937a",
+    "byte_identical": true
+  },
+  {
+    "file": "figures/campaign_causal_controls.png",
+    "source": "results/visual_campaign_2026-10-25/aggregate/representative_runs.png",
+    "source_sha256": "8d4413e0d71c107f97a34d1e5d1eb6505f7479503b3db2cdadf9e842df456938",
+    "byte_identical": true
+  },
+  {
+    "file": "figures/radius_sensitivity.png",
+    "source": "results/visual_campaign_2026-10-25/aggregate/radius_sensitivity.png",
+    "source_sha256": "cd48f6b48cd948858781fc81b7b3f8d1f1e584d949a814b47a3b78c0b962c7e0",
+    "byte_identical": true
+  },
+  {
+    "file": "figures/task1_calibration.png",
+    "source": "results/measurement_task1_2026-10-24/nominal_comparison.png",
+    "source_sha256": "1de227c3cefe278e22be6da2b5c923e12ba2d2ad5f07a049c8ba9cf52510d607",
+    "byte_identical": true
+  },
+  {
+    "file": "figures/draco_heldout_benchmark.png",
+    "source": "results/draco_web_task3a6_2026-10-26/curated/heldout_benchmark.png",
+    "source_sha256": "5691b4b4694990053ef5eaf72e17a6cbe73a0e94f4c44e74c415125c91c4b785",
+    "byte_identical": true
+  },
+  {
+    "file": "figures/aws_live_resolved.png",
+    "source": "results/draco_web_task3a6_2026-10-26/judge_live_resolved.png",
+    "source_sha256": "aaea58cba5e99d2725685d731a3caa8f3c8ef7c52d7c17a2e95abc1377f3475b",
+    "byte_identical": true
+  },
+  {
+    "file": "figures/aws_live_partial.png",
+    "source": "results/draco_web_task3a6_2026-10-26/judge_live_partial.png",
+    "source_sha256": "6b462cec686026f1fd02a5567dc265abf954d7eb9b8ee82d57c7a97d570c6a66",
+    "byte_identical": true
+  },
+  {
+    "file": "figures/aws_real_page.png",
+    "source": "results/draco_web_task3a6_2026-10-26/judge_draco_intro.png",
+    "source_sha256": "fe63841aa8e18cf144dc1989ade966b67b1f62d9d3867c4e1d345b753b7c1ec9",
+    "byte_identical": true
+  },
+  {
+    "file": "figures/draco_progression.png",
+    "source": "12-frame curated catalog; selected IDs f0000,f2419,f3764,f3973,f3998,f3999",
+    "presentation_only": true,
+    "method": "Original images placed on a contact sheet; no new inference, labels or metrics"
+  },
+  {
+    "file": "figures/synthetic_camera_detail.png",
+    "source": "figures/synthetic_camera.png",
+    "source_sha256": "e0db82e20d2c8e33bf8bdbf15ad197f8e87ce2ac522a3e6538a1e04033a33e01",
+    "presentation_only": true,
+    "crop_xyxy": [
+      65,
+      170,
+      420,
+      320
+    ],
+    "method": "Display crop after existing inference; no pixel input, label or metric changes"
+  },
+  {
+    "file": "figures/aws_live_resolved_detail.png",
+    "source": "figures/aws_live_resolved.png",
+    "source_sha256": "aaea58cba5e99d2725685d731a3caa8f3c8ef7c52d7c17a2e95abc1377f3475b",
+    "presentation_only": true,
+    "crop_xyxy": [
+      35,
+      355,
+      690,
+      1085
+    ],
+    "method": "Display crop after existing inference; no pixel input, label or metric changes"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "local_core": {
+    "tests": "143",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "time": "89.941"
+  },
+  "packaged_core": {
+    "tests": "143",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "time": "98.220"
+  },
+  "linux_core": {
+    "tests": "143",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "time": "58.711"
+  },
+  "focused_web_and_draco_tests": "34 passed",
+  "javascript_syntax_checks": "app.js and draco.js passed node --check",
+  "linux_dependency_check": "No broken requirements found.",
+  "historical_tooling_tests": "61 passed in prior unchanged Windows verification; not rerun for presentation work",
+  "fresh_environment_install_tested": false,
+  "heldout_scoring_rerun": false,
+  "research_campaign_rerun": false
+}

@@ -1,0 +1,218 @@
+{
+  "endpoint": "http://ec2-54-253-67-121.ap-southeast-2.compute.amazonaws.com",
+  "health": {
+    "release_sha256": "f96073705d691a539d26f354167fafe9f27e57252ad8a9367266e958d95625f6",
+    "source_sha256": "f3cc6eaf1813646e4ae8cc447d042904ad079d5484dbf81a13a3d2f653c9fbfa",
+    "status": "ok"
+  },
+  "results": {
+    "NOMINAL": {
+      "job_id": "96405bdb302146348eaae6d6262075a7",
+      "runtime": {
+        "architecture": "x86_64",
+        "opencv": "5.0.0",
+        "opencv_distribution": "5.0.0.93",
+        "opencv_threads": 1,
+        "peak_rss_mib": 136.95703125,
+        "platform": "Linux",
+        "python": "3.12.3",
+        "release_sha256": "f96073705d691a539d26f354167fafe9f27e57252ad8a9367266e958d95625f6",
+        "source_sha256": "f3cc6eaf1813646e4ae8cc447d042904ad079d5484dbf81a13a3d2f653c9fbfa",
+        "wall_s": 14.072976264011231
+      },
+      "comparison": {
+        "status": {
+          "local": "TARGET_IMPACT",
+          "cloud": "TARGET_IMPACT",
+          "match": true
+        },
+        "elapsed_s": {
+          "local": 596.3145073930427,
+          "cloud": 596.3145073930427,
+          "match": true
+        },
+        "delta_v_mps": {
+          "local": 1.6037048712037818,
+          "cloud": 1.6037048712037818,
+          "match": true
+        },
+        "accepted_updates": {
+          "local": 557,
+          "cloud": 557,
+          "match": true
+        },
+        "missing_updates": {
+          "local": 40,
+          "cloud": 40,
+          "match": true
+        },
+        "nav_hold_s": {
+          "local": 16.0,
+          "cloud": 16.0,
+          "match": true
+        },
+        "final_estimation_error_m": {
+          "local": 9.227727090140252,
+          "cloud": 9.22772709014562,
+          "match": true
+        }
+      }
+    },
+    "BLACKOUT": {
+      "job_id": "6b76277c822d42f1b557c4d34f8d7bd6",
+      "runtime": {
+        "architecture": "x86_64",
+        "opencv": "5.0.0",
+        "opencv_distribution": "5.0.0.93",
+        "opencv_threads": 1,
+        "peak_rss_mib": 136.9375,
+        "platform": "Linux",
+        "python": "3.12.3",
+        "release_sha256": "f96073705d691a539d26f354167fafe9f27e57252ad8a9367266e958d95625f6",
+        "source_sha256": "f3cc6eaf1813646e4ae8cc447d042904ad079d5484dbf81a13a3d2f653c9fbfa",
+        "wall_s": 13.881297967003775
+      },
+      "comparison": {
+        "status": {
+          "local": "TARGET_IMPACT",
+          "cloud": "TARGET_IMPACT",
+          "match": true
+        },
+        "elapsed_s": {
+          "local": 596.3199277354579,
+          "cloud": 596.3199277354579,
+          "match": true
+        },
+        "delta_v_mps": {
+          "local": 1.64294563033111,
+          "cloud": 1.64294563033111,
+          "match": true
+        },
+        "accepted_updates": {
+          "local": 537,
+          "cloud": 537,
+          "match": true
+        },
+        "missing_updates": {
+          "local": 60,
+          "cloud": 60,
+          "match": true
+        },
+        "nav_hold_s": {
+          "local": 36.0,
+          "cloud": 36.0,
+          "match": true
+        },
+        "final_estimation_error_m": {
+          "local": 9.14589125673985,
+          "cloud": 9.145891256745896,
+          "match": true
+        }
+      }
+    },
+    "NO_MEASUREMENT": {
+      "job_id": "aa097431b6bd4236ac0eec5ca4a4077a",
+      "runtime": {
+        "architecture": "x86_64",
+        "opencv": "5.0.0",
+        "opencv_distribution": "5.0.0.93",
+        "opencv_threads": 1,
+        "peak_rss_mib": 113.4296875,
+        "platform": "Linux",
+        "python": "3.12.3",
+        "release_sha256": "f96073705d691a539d26f354167fafe9f27e57252ad8a9367266e958d95625f6",
+        "source_sha256": "f3cc6eaf1813646e4ae8cc447d042904ad079d5484dbf81a13a3d2f653c9fbfa",
+        "wall_s": 14.164126509000198
+      },
+      "comparison": {
+        "status": {
+          "local": "MISS",
+          "cloud": "MISS",
+          "match": true
+        },
+        "elapsed_s": {
+          "local": 599.6906105707749,
+          "cloud": 599.6906105707749,
+          "match": true
+        },
+        "delta_v_mps": {
+          "local": 0.0,
+          "cloud": 0.0,
+          "match": true
+        },
+        "accepted_updates": {
+          "local": 0,
+          "cloud": 0,
+          "match": true
+        },
+        "missing_updates": {
+          "local": 600,
+          "cloud": 600,
+          "match": true
+        },
+        "nav_hold_s": {
+          "local": 567.0,
+          "cloud": 567.0,
+          "match": true
+        },
+        "final_estimation_error_m": {
+          "local": 446.4377045751009,
+          "cloud": 446.43770457510146,
+          "match": true
+        }
+      }
+    },
+    "BALLISTIC": {
+      "job_id": "e81198fbffc24e529c5b25cc4ff20ade",
+      "runtime": {
+        "architecture": "x86_64",
+        "opencv": "5.0.0",
+        "opencv_distribution": "5.0.0.93",
+        "opencv_threads": 1,
+        "peak_rss_mib": 126.03125,
+        "platform": "Linux",
+        "python": "3.12.3",
+        "release_sha256": "f96073705d691a539d26f354167fafe9f27e57252ad8a9367266e958d95625f6",
+        "source_sha256": "f3cc6eaf1813646e4ae8cc447d042904ad079d5484dbf81a13a3d2f653c9fbfa",
+        "wall_s": 13.792848561002756
+      },
+      "comparison": {
+        "status": {
+          "local": "MISS",
+          "cloud": "MISS",
+          "match": true
+        },
+        "elapsed_s": {
+          "local": 599.6906105707749,
+          "cloud": 599.6906105707749,
+          "match": true
+        },
+        "delta_v_mps": {
+          "local": 0.0,
+          "cloud": 0.0,
+          "match": true
+        },
+        "accepted_updates": {
+          "local": 571,
+          "cloud": 571,
+          "match": true
+        },
+        "missing_updates": {
+          "local": 29,
+          "cloud": 29,
+          "match": true
+        },
+        "nav_hold_s": {
+          "local": 0.0,
+          "cloud": 0.0,
+          "match": true
+        },
+        "final_estimation_error_m": {
+          "local": 9.479047629951395,
+          "cloud": 9.479047629951511,
+          "match": true
+        }
+      }
+    }
+  }
+}

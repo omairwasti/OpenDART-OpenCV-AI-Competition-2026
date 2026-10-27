@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "same_instance": true,
+  "instance_count": 1,
+  "instance_type": "c7i-flex.large",
+  "same_public_ip": true,
+  "cloudformation_resource_identities_unchanged": true,
+  "stack_status": "UPDATE_COMPLETE",
+  "private_bucket_public_access_block": {
+    "BlockPublicAcls": true,
+    "IgnorePublicAcls": true,
+    "BlockPublicPolicy": true,
+    "RestrictPublicBuckets": true
+  },
+  "no_new_infrastructure": true
+}

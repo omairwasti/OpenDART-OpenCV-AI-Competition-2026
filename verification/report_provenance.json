@@ -1,0 +1,13 @@
+{
+  "original_partner_source_zip_sha256": "597c65e77c3d6546c5d92bf125a379b0507c96328fd433c9e1f36fe1ba61b33a",
+  "original_partner_members": {
+    "README.md": "67f4b5062b1fb79fc104397b5a2ba1c62610d0160df222faa24b782286841082",
+    "images/comparison.png": "c88f3b6d0413524e52c0c076d1ecf96de1f55fc74c90c1788b4a19c642b8554b",
+    "main.tex": "47d1d78bf44448e396359b4240e4d8a283022ee63c62abbccecada6022b89a7c"
+  },
+  "dynamics_controller_derivations_retained": true,
+  "all_46_display_equations_unchanged_by_copy_edit": true,
+  "all_body_numeric_tokens_unchanged_by_copy_edit": true,
+  "original_source_untouched": true,
+  "report_pages": 16
+}

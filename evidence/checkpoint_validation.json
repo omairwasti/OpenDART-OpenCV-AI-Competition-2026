@@ -1,0 +1,191 @@
+{
+  "checkpoints": [
+    {
+      "id": "f0000",
+      "frame_index": 0,
+      "keys_verified": [
+        "state",
+        "identity_status",
+        "target_center_uv",
+        "visible_region_xywh",
+        "selection_available",
+        "resolved_body",
+        "region_component_count",
+        "events"
+      ],
+      "state": "SEARCH_UNRESOLVED"
+    },
+    {
+      "id": "f1291",
+      "frame_index": 1291,
+      "keys_verified": [
+        "state",
+        "identity_status",
+        "target_center_uv",
+        "visible_region_xywh",
+        "selection_available",
+        "resolved_body",
+        "region_component_count",
+        "events"
+      ],
+      "state": "SEARCH_UNRESOLVED"
+    },
+    {
+      "id": "f2419",
+      "frame_index": 2419,
+      "keys_verified": [
+        "state",
+        "identity_status",
+        "target_center_uv",
+        "visible_region_xywh",
+        "selection_available",
+        "resolved_body",
+        "region_component_count",
+        "events"
+      ],
+      "state": "TRACKING"
+    },
+    {
+      "id": "f3226",
+      "frame_index": 3226,
+      "keys_verified": [
+        "state",
+        "identity_status",
+        "target_center_uv",
+        "visible_region_xywh",
+        "selection_available",
+        "resolved_body",
+        "region_component_count",
+        "events"
+      ],
+      "state": "TRACKING"
+    },
+    {
+      "id": "f3764",
+      "frame_index": 3764,
+      "keys_verified": [
+        "state",
+        "identity_status",
+        "target_center_uv",
+        "visible_region_xywh",
+        "selection_available",
+        "resolved_body",
+        "region_component_count",
+        "events"
+      ],
+      "state": "TRACKING"
+    },
+    {
+      "id": "f3825",
+      "frame_index": 3825,
+      "keys_verified": [
+        "state",
+        "identity_status",
+        "target_center_uv",
+        "visible_region_xywh",
+        "selection_available",
+        "resolved_body",
+        "region_component_count",
+        "events"
+      ],
+      "state": "TRACKING"
+    },
+    {
+      "id": "f3946",
+      "frame_index": 3946,
+      "keys_verified": [
+        "state",
+        "identity_status",
+        "target_center_uv",
+        "visible_region_xywh",
+        "selection_available",
+        "resolved_body",
+        "region_component_count",
+        "events"
+      ],
+      "state": "RESOLVED_BODY"
+    },
+    {
+      "id": "f3973",
+      "frame_index": 3973,
+      "keys_verified": [
+        "state",
+        "identity_status",
+        "target_center_uv",
+        "visible_region_xywh",
+        "selection_available",
+        "resolved_body",
+        "region_component_count",
+        "events"
+      ],
+      "state": "RESOLVED_BODY"
+    },
+    {
+      "id": "f3991",
+      "frame_index": 3991,
+      "keys_verified": [
+        "state",
+        "identity_status",
+        "target_center_uv",
+        "visible_region_xywh",
+        "selection_available",
+        "resolved_body",
+        "region_component_count",
+        "events"
+      ],
+      "state": "RESOLVED_BODY"
+    },
+    {
+      "id": "f3994",
+      "frame_index": 3994,
+      "keys_verified": [
+        "state",
+        "identity_status",
+        "target_center_uv",
+        "visible_region_xywh",
+        "selection_available",
+        "resolved_body",
+        "region_component_count",
+        "events"
+      ],
+      "state": "RESOLVED_BODY"
+    },
+    {
+      "id": "f3998",
+      "frame_index": 3998,
+      "keys_verified": [
+        "state",
+        "identity_status",
+        "target_center_uv",
+        "visible_region_xywh",
+        "selection_available",
+        "resolved_body",
+        "region_component_count",
+        "events"
+      ],
+      "state": "RESOLVED_BODY"
+    },
+    {
+      "id": "f3999",
+      "frame_index": 3999,
+      "keys_verified": [
+        "state",
+        "identity_status",
+        "target_center_uv",
+        "visible_region_xywh",
+        "selection_available",
+        "resolved_body",
+        "region_component_count",
+        "events"
+      ],
+      "state": "PARTIAL_FRAME"
+    }
+  ],
+  "frames_replayed_causally": 4000,
+  "original_pngs": 12,
+  "total_bytes": 4734759,
+  "no_labels_in_checkpoints": true,
+  "video_frames": 4000,
+  "video_fps": 60.0,
+  "original_video_unchanged": true
+}

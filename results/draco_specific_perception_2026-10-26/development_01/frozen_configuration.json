@@ -1,0 +1,74 @@
+{
+  "parameters": {
+    "name": "draco_recorded_image_v1",
+    "feature_detector": "Unmodified AsteroidDetector default image measurements; separate DRACO association",
+    "persistence_alpha": 0.02,
+    "persistence_warmup_frames": 60,
+    "persistence_probability": 0.75,
+    "persistent_max_area_px2": 24.0,
+    "persistent_fraction": 0.5,
+    "acquire_min_secondary_area_px2": 30.0,
+    "acquire_min_primary_area_px2": 80.0,
+    "primary_secondary_area_ratio": 2.5,
+    "secondary_uniqueness_area_ratio": 1.5,
+    "acquire_confirm_frames": 3,
+    "pair_vector_gate_px": 25.0,
+    "phase_size": 256,
+    "phase_min_response": 0.1,
+    "phase_max_shift_px": 512.0,
+    "position_gate_px": 16.0,
+    "radius_gate_multiplier": 2.0,
+    "miss_gate_growth_px": 10.0,
+    "maximum_gate_px": 128.0,
+    "max_area_step_ratio": 4.0,
+    "reset_after_missed_frames": 5,
+    "resolved_enter_extent_px": 64.0,
+    "resolved_confirm_frames": 2,
+    "resolved_roi_expansion": 1.6,
+    "resolved_fragment_min_fraction": 0.002,
+    "point_evaluation_tolerance_px": 5.0,
+    "region_evaluation_iou_threshold": 0.3
+  },
+  "designation": {
+    "frame_index": 3825,
+    "product_stem": "dart_0401929856_16899_02_iof",
+    "acquisition_utc": "2022-09-26T23:11:08.829Z",
+    "visible_box_xywh": [
+      483.74,
+      278.24,
+      19.03,
+      19.03
+    ],
+    "center_uv": [
+      493.255,
+      287.755
+    ],
+    "source": "One explicitly reviewed DEVELOPMENT region; earliest high-confidence compact visible region >=15px",
+    "initialization": "Choose current image component whose centroid lies inside this one box, nearest box center",
+    "manual_initializations": 1,
+    "later_manual_corrections": 0
+  },
+  "label": "DEVELOPMENT SET - NOT HELD-OUT EVALUATION",
+  "source_hashes": {
+    "tools\\draco_development.py": "8b77ec383b58683c4b5d00a3538ceae7f1861d1380c83f1926006a6e55231296",
+    "tools\\draco_perception.py": "6afb56362fe841f2158c291600d63760929ea9948940d984dc05d9f58796aba9",
+    "tools\\draco_perception_config_v1.json": "84554612ed68c6b699ac2d4ccc013a38dcf317d38eb95b4d9740f3e2ea7558d5",
+    "opendart\\vision.py": "ea6459012530a9f55e6c51a485bbdc217ea9a206c16f5624cc646b096c035aad",
+    "tools\\replay_draco_frozen.py": "a512fec66f724d833a83030161b96eff0fd707fa808cad07fbbfa423720815e3"
+  },
+  "development_annotation_sha256": "40298e0ceffcdbb9de57306cf7392d3197eddc69d1fc692d974629e139c35e5a",
+  "opencv": "5.0.0",
+  "numpy": "2.4.6",
+  "python": "3.12.15 | packaged by Anaconda, Inc. | (main, Oct  1 2026, 20:14:50) [MSC v.1942 64 bit (AMD64)]",
+  "state_rules": {
+    "search": "Three consecutive unique separated secondary hypotheses, >=30px2 and primary >=2.5x area",
+    "tracking": "Past/current phase-correlation translation and position/area continuity",
+    "lost": "No accepted observation; no selected target emitted",
+    "reacquiring": "After five missed frames discard stale gate; require fresh three-frame two-body hypothesis; identity link downgraded",
+    "resolved": "Extent >=64px for two consecutive detections, then collective foreground envelope; no single-component requirement",
+    "partial": "Curated metadata flag; transmitted region only, no complete-frame metrics"
+  },
+  "held_out_truth_consumed": false,
+  "no_tuning_after_freeze": true,
+  "boundary": "Recorded image perception, never causal closed-loop guidance"
+}

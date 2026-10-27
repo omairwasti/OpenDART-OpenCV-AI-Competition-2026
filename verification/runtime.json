@@ -1,0 +1,30 @@
+{
+  "runtime": {
+    "platform": "Linux",
+    "python": "3.12.3",
+    "opencv": "5.0.0",
+    "opencv_distribution": "5.0.0.93",
+    "linux_tests": {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "143",
+      "time": "58.711",
+      "timestamp": "2026-10-26T19:08:19.971035+00:00"
+    },
+    "method_sha256": "6afb56362fe841f2158c291600d63760929ea9948940d984dc05d9f58796aba9",
+    "configuration_sha256": "84554612ed68c6b699ac2d4ccc013a38dcf317d38eb95b4d9740f3e2ea7558d5",
+    "curated_originals": 12,
+    "release_sha256": "44685f7cf710d79a857f68124c4b5dde5930a055486ab6a167052577d24888a2"
+  },
+  "activation_succeeded": true,
+  "app_and_nginx_active": true,
+  "rollback_preserved": true,
+  "existing_instance_retained": true,
+  "resource_inventory_unchanged": true,
+  "stack_resources": 5,
+  "region": "ap-southeast-2",
+  "release_sha256": "44685f7cf710d79a857f68124c4b5dde5930a055486ab6a167052577d24888a2",
+  "backend_source_sha256": "f3cc6eaf1813646e4ae8cc447d042904ad079d5484dbf81a13a3d2f653c9fbfa"
+}

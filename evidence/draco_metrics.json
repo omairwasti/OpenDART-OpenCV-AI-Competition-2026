@@ -1,0 +1,135 @@
+{
+  "reviewed": 18,
+  "sampled": 20,
+  "unreviewed_boundary_excluded": 2,
+  "compact_labels": 8,
+  "region_labels": 8,
+  "uncertain_labels": 2,
+  "modes": {
+    "frozen_baseline": {
+      "compact": {
+        "n": 8,
+        "selected_n": 6,
+        "within_5px_n": 2,
+        "selected_outside_5px_n": 4,
+        "unavailable_n": 2,
+        "centroid_error_n": 6,
+        "centroid_error_median_px": 82.48290858028321,
+        "centroid_errors_px": [
+          173.09102265741942,
+          108.41767714877717,
+          56.54814001178925,
+          159.3583956314374,
+          1.1059888414214896,
+          1.330997930380618
+        ],
+        "confidence_counts": {
+          "low": 2,
+          "medium": 2,
+          "high": 4
+        }
+      },
+      "regions": {
+        "n": 8,
+        "selected_n": 1,
+        "median_iou": 0.0,
+        "iou_ge_0_3_n": 1,
+        "region_ious": [
+          0.0,
+          0.0,
+          0.0,
+          0.7503651595462608,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "uncertain": {
+        "n": 2,
+        "selected_n": 2,
+        "note": "Selections on ambiguous labels are not counted as semantic false positives or correct identification"
+      },
+      "excluded_pre_or_at_designation": 0
+    },
+    "autonomous": {
+      "compact": {
+        "n": 8,
+        "selected_n": 6,
+        "within_5px_n": 6,
+        "selected_outside_5px_n": 0,
+        "unavailable_n": 2,
+        "centroid_error_n": 6,
+        "centroid_error_median_px": 1.2184933859010538,
+        "centroid_errors_px": [
+          0.6772547000324175,
+          0.482925905698645,
+          1.1059888414214896,
+          1.330997930380618,
+          1.6016309368133421,
+          1.394283525288885
+        ],
+        "confidence_counts": {
+          "low": 2,
+          "medium": 2,
+          "high": 4
+        }
+      },
+      "regions": {
+        "n": 8,
+        "selected_n": 8,
+        "median_iou": 0.8017834625629814,
+        "iou_ge_0_3_n": 8,
+        "region_ious": [
+          0.5607751111111119,
+          0.8038087719298255,
+          0.7997581531961372,
+          0.7503651595462608,
+          0.7685028168018124,
+          0.9518964641614244,
+          0.9444621199437502,
+          0.9431193019700452
+        ]
+      },
+      "uncertain": {
+        "n": 2,
+        "selected_n": 0,
+        "note": "Selections on ambiguous labels are not counted as semantic false positives or correct identification"
+      },
+      "excluded_pre_or_at_designation": 0
+    },
+    "human_designated": {
+      "compact": {
+        "n": 0,
+        "selected_n": 0,
+        "within_5px_n": 0,
+        "selected_outside_5px_n": 0,
+        "unavailable_n": 0,
+        "centroid_error_n": 0,
+        "centroid_error_median_px": null,
+        "centroid_errors_px": [],
+        "confidence_counts": {}
+      },
+      "regions": {
+        "n": 6,
+        "selected_n": 6,
+        "median_iou": 0.8714387275830913,
+        "iou_ge_0_3_n": 6,
+        "region_ious": [
+          0.7997581531961372,
+          0.7503651595462608,
+          0.7685028168018124,
+          0.9518964641614244,
+          0.9444621199437502,
+          0.9431193019700452
+        ]
+      },
+      "uncertain": {
+        "n": 0,
+        "selected_n": 0,
+        "note": "Selections on ambiguous labels are not counted as semantic false positives or correct identification"
+      },
+      "excluded_pre_or_at_designation": 12
+    }
+  }
+}

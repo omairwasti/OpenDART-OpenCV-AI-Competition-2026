@@ -1,0 +1,40 @@
+{
+  "fresh_inference_verified": true,
+  "comparison_with_existing_frozen_chronology": {
+    "f3991": {
+      "state": "RESOLVED_BODY",
+      "checks": {
+        "state": true,
+        "identity_status": true,
+        "target_center_uv": true,
+        "visible_region_xywh": true,
+        "selection_available": true,
+        "resolved_body": true,
+        "region_component_count": true,
+        "events": true
+      },
+      "method_sha256": "6afb56362fe841f2158c291600d63760929ea9948940d984dc05d9f58796aba9",
+      "configuration_sha256": "84554612ed68c6b699ac2d4ccc013a38dcf317d38eb95b4d9740f3e2ea7558d5",
+      "original_sha256": "e8c4a3a1e3d5a42ed8856be096ff326cce9d54f969e390054584bbed85732a5c",
+      "server_processing_ms": 134.69345201156102
+    },
+    "f3999": {
+      "state": "PARTIAL_FRAME",
+      "checks": {
+        "state": true,
+        "identity_status": true,
+        "target_center_uv": true,
+        "visible_region_xywh": true,
+        "selection_available": true,
+        "resolved_body": true,
+        "region_component_count": true,
+        "events": true
+      },
+      "method_sha256": "6afb56362fe841f2158c291600d63760929ea9948940d984dc05d9f58796aba9",
+      "configuration_sha256": "84554612ed68c6b699ac2d4ccc013a38dcf317d38eb95b4d9740f3e2ea7558d5",
+      "original_sha256": "985ddad2c2f3c0b8c9ee43d1aa3ea4e97074b045e2dbcce9c8ff19e0931c3019",
+      "server_processing_ms": 116.63166400103364
+    }
+  },
+  "heldout_scoring_rerun": false
+}

@@ -1,0 +1,46 @@
+{
+  "acquisition_utc": "2022-09-26T23:14:23.328Z",
+  "association_wall_s": 0.00003084099444095045,
+  "checkpoint_sha256": "6bb4c9f411c51192b3a9ee447807fcc35481674a41c719b8c741eb39d3ad46f5",
+  "configuration_sha256": "84554612ed68c6b699ac2d4ccc013a38dcf317d38eb95b4d9740f3e2ea7558d5",
+  "events": [
+    "PARTIAL_FRAME"
+  ],
+  "execution": "LIVE_FROZEN_CHECKPOINT_CONTINUATION",
+  "identity_status": "SECONDARY_IMAGE_HYPOTHESIS_IDENTITY_UNVERIFIED",
+  "image_id": "f3999",
+  "inference_executed": true,
+  "is_partial": true,
+  "kept_candidate_count": 1,
+  "method_sha256": "6afb56362fe841f2158c291600d63760929ea9948940d984dc05d9f58796aba9",
+  "missed_frames": 0,
+  "mode": "autonomous",
+  "opencv": "5.0.0",
+  "original_sha256": "985ddad2c2f3c0b8c9ee43d1aa3ea4e97074b045e2dbcce9c8ff19e0931c3019",
+  "platform": "Linux",
+  "product_id": "dart_0401930050_41838_02_iof",
+  "python": "3.12.3",
+  "raw_candidate_count": 1,
+  "region_component_count": 1,
+  "release_sha256": "44685f7cf710d79a857f68124c4b5dde5930a055486ab6a167052577d24888a2",
+  "representation": "TRANSMITTED_VISIBLE_REGION_ONLY",
+  "request_id": "c0fd9d0b851f45d884e8bb100b7c4a71",
+  "request_wall_ms": 215.02225399308372,
+  "resolved_body": true,
+  "selected_feature_index": null,
+  "selection_available": false,
+  "server_processing_ms": 116.63166400103364,
+  "state": "PARTIAL_FRAME",
+  "target_center_uv": null,
+  "time_to_impact_s": 0.855,
+  "visible_region_center_uv": [
+    604,
+    633.5
+  ],
+  "visible_region_xywh": [
+    347,
+    607,
+    514,
+    53
+  ]
+}

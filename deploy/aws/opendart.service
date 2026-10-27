@@ -1,0 +1,32 @@
+[Unit]
+Description=OpenDART bounded OpenCV demonstration
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=opendart
+Group=opendart
+WorkingDirectory=/opt/opendart/current
+EnvironmentFile=/etc/opendart.env
+Environment=PYTHONDONTWRITEBYTECODE=1 MPLBACKEND=Agg MPLCONFIGDIR=/var/lib/opendart/matplotlib OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1
+ExecStart=/opt/opendart/venv/bin/gunicorn --bind 127.0.0.1:8000 --workers 1 --threads 4 --timeout 30 --access-logfile - --error-logfile - opendart.web:create_app()
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=5
+KillMode=control-group
+MemoryMax=3G
+TasksMax=64
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/opendart /var/log/opendart
+IPAddressDeny=169.254.169.254/32
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+StandardOutput=append:/var/log/opendart/app.log
+StandardError=append:/var/log/opendart/app.log
+
+[Install]
+WantedBy=multi-user.target

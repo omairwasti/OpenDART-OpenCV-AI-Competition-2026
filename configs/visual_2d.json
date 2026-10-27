@@ -1,0 +1,17 @@
+{
+  "name": "pixel_closed_loop_2d",
+  "period_s": 42900.0,
+  "spin_period_s": 8136.0,
+  "epoch_s": 42900.0,
+  "initial_range_m": 12000.0,
+  "initial_cross_m": 500.0,
+  "speed_mps": 20.0,
+  "camera_f_px": 700.0,
+  "use_apparent_size": true,
+  "size_fractional_sigma": 0.10,
+  "blackout_s": [[200.0, 220.0]],
+  "dropout_probability": 0.02,
+  "require_opencv5": true,
+  "fps": 24.0,
+  "overview_frames": 192
+}

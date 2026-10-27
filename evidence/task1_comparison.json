@@ -1,0 +1,74 @@
+{
+  "before": {
+    "status": "TARGET_IMPACT",
+    "elapsed_s": 596.4390669495624,
+    "accepted_updates": 557,
+    "update_reason_counts": {
+      "ACCEPTED": 557,
+      "NO_CANDIDATE": 40,
+      "ASSOCIATION_FAILED": 0,
+      "CLIPPED": 0,
+      "TOO_SMALL": 0,
+      "INVALID_GEOMETRY": 0,
+      "INVALID_MEASUREMENT": 0,
+      "NIS_REJECTED": 0
+    },
+    "rejected_updates": 0,
+    "missing_updates": 40,
+    "nav_hold_s": 18.0,
+    "delta_v_mps": 1.992746755057681,
+    "final_estimation_error_m": 59.17792602269538,
+    "eval_peak_position_error_m": 2096.930482454422,
+    "eval_final_true_range_m": 87.05496639934793,
+    "estimate_final_range_m": 145.93071730941654,
+    "estimate_final_range_sigma_m": 9.726176531026274,
+    "eval_final_range_error_sigma": 6.053329458112994,
+    "eval_max_abs_sampled_range_error_sigma": 18.114030189703602,
+    "size_radius_bias_px": 0.0,
+    "peak_error_time_s": 27.0,
+    "last_sample": {
+      "elapsed_s": 596.0,
+      "eval_true_range_m": 95.81850337126218,
+      "estimated_range_m": 153.62338786486524,
+      "estimate_range_sigma_m": 9.705767999768833,
+      "eval_range_error_sigma": 5.955724935417766
+    }
+  },
+  "after": {
+    "status": "TARGET_IMPACT",
+    "elapsed_s": 596.3145073930427,
+    "accepted_updates": 557,
+    "update_reason_counts": {
+      "ACCEPTED": 557,
+      "NO_CANDIDATE": 40,
+      "ASSOCIATION_FAILED": 0,
+      "CLIPPED": 0,
+      "TOO_SMALL": 0,
+      "INVALID_GEOMETRY": 0,
+      "INVALID_MEASUREMENT": 0,
+      "NIS_REJECTED": 0
+    },
+    "rejected_updates": 0,
+    "missing_updates": 40,
+    "nav_hold_s": 16.0,
+    "delta_v_mps": 1.6037048712037818,
+    "final_estimation_error_m": 9.227727090140252,
+    "eval_peak_position_error_m": 375.0693311865892,
+    "eval_final_true_range_m": 87.02599821340937,
+    "estimate_final_range_m": 96.24443727827587,
+    "estimate_final_range_sigma_m": 9.79890990942822,
+    "eval_final_range_error_sigma": 0.9407616918690919,
+    "eval_max_abs_sampled_range_error_sigma": 2.6174837747714412,
+    "size_radius_bias_px": 1.07,
+    "peak_error_time_s": 82.0,
+    "last_sample": {
+      "elapsed_s": 596.0,
+      "eval_true_range_m": 93.31586042325507,
+      "estimated_range_m": 102.42072272778552,
+      "estimate_range_sigma_m": 9.779749647199473,
+      "eval_range_error_sigma": 0.9309913477322713
+    }
+  },
+  "legacy_reproduces_audit": true,
+  "calibration_raw_samples_reproduced": true
+}

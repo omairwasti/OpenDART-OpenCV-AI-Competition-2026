@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opendart-dynamics"
+version = "0.2.0"
+description = "Reproducible binary-asteroid terminal-interception research demonstrator"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.21,<2.5", "scipy>=1.8,<2", "matplotlib>=3.5,<4"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+vision = ["opencv-python>=5,<6"]
+web = ["Flask==3.1.3", "gunicorn==26.2.0; platform_system != 'Windows'"]
+
+[project.scripts]
+opendart = "opendart.cli:main"
+opendart-visual = "opendart.visual:main"
+opendart-replay = "opendart.replay:main"
+
+[tool.setuptools.packages.find]
+include = ["opendart*"]
+
+[tool.setuptools.package-data]
+opendart = ["templates/*.html", "static/*.js", "static/*.css"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
